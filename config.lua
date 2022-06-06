@@ -1,6 +1,6 @@
 Config = {}
 Config.Controls = {
-	RaiseX = {control = 174, name = 'INPUT_CELLPHONE_LEFT'},
+	RaiseX = {control = 174, name = 'INPUT_CELLPHONE_LEFT'}, -- https://docs.fivem.net/docs/game-references/controls/
 	LowerX = {control = 175, name = 'INPUT_CELLPHONE_RIGHT'},
 	RaiseY = {control = 15, name = 'INPUT_WEAPON_WHEEL_PREV'},
 	LowerY = {control = 14, name = 'INPUT_WEAPON_WHEEL_NEXT'},
