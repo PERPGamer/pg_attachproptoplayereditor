@@ -1,23 +1,23 @@
 local createPropLocation = false
 
 local function drawText(x, y, width, height, scale, text, r, g, b, a)
-    SetTextFont(4)
-    SetTextProportional(false)
-    SetTextScale(scale, scale)
-    SetTextColour(r, g, b, a)
-    SetTextDropShadow()
-    SetTextEdge(2, 0, 0, 0, 255)
-    SetTextDropShadow()
-    SetTextOutline()
-    BeginTextCommandDisplayText('STRING')
-    AddTextComponentSubstringPlayerName(text)
-    EndTextCommandDisplayText(x - width / 2, y - height / 2 + 0.005)
+	SetTextFont(4)
+	SetTextProportional(false)
+	SetTextScale(scale, scale)
+	SetTextColour(r, g, b, a)
+	SetTextDropShadow()
+	SetTextEdge(2, 0, 0, 0, 255)
+	SetTextDropShadow()
+	SetTextOutline()
+	BeginTextCommandDisplayText('STRING')
+	AddTextComponentSubstringPlayerName(text)
+	EndTextCommandDisplayText(x - width / 2, y - height / 2 + 0.005)
 end
 
 local function helpText(text)
-    BeginTextCommandDisplayHelp('STRING')
-	AddTextComponentSubstringPlayerName(text)
-    EndTextCommandDisplayHelp(0, false, false, -1)
+	AddTextEntry('PGPROPTOPED', text)
+	BeginTextCommandDisplayHelp('PGPROPTOPED')
+	EndTextCommandDisplayHelp(0, false, false, -1)
 end
 
 local function notification(text)
