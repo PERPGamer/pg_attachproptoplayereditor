@@ -5,7 +5,10 @@ author 'PERPGamer'
 description 'A easy editor to attach a prop to a player.'
 version '1.0.0'
 
-client_scripts { 
-	"config.lua",
-	"client.lua",
+client_scripts {
+	'config.lua',
+	'client.lua',
 }
+
+lua54 'yes'
+use_experimental_fxv2_oal 'yes'
